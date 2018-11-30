@@ -1,0 +1,51 @@
+﻿@model Inter.Models.Viagem
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Viagem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BairroPartida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BairroPartida)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BairroChegada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BairroChegada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraPartida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoraPartida)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraChegada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoraChegada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DueAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DueAt)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+﻿@model Inter.Models.Viagem
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Viagem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BairroPartida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BairroPartida)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BairroChegada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BairroChegada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraPartida)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoraPartida)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraChegada)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoraChegada)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DueAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DueAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status.Description)
+        </dd>
+    </dl>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
